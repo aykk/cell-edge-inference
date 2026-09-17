@@ -15,7 +15,7 @@ import impair  # noqa: E402
 
 MODELS = ["qwen2.5:0.5b", "qwen2.5:1.5b", "qwen2.5:3b"]
 PROMPTS = ["short", "long"]
-LOSS_AXIS = [0, 0.5, 1, 2, 5, 10]
+LOSS_AXIS = [0, 0.5, 1, 2, 5, 10, 20]
 DELAY_AXIS = [20, 50, 100, 200]
 CROSS = [(1, 50), (1, 100), (5, 50), (5, 100)]
 

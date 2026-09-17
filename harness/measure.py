@@ -14,7 +14,7 @@ FIELDS = [
     "loss_pct", "delay_ms", "condition", "wall_start", "wall_end",
     "ttft_ms", "total_ms", "connect_ms", "headers_ms",
     "tokens", "eval_count", "tokens_per_s", "ok", "failure", "detail",
-    "loadavg_1m",
+    "loadavg_1m", "prompt_nonce",
 ]
 
 # ttft: request dispatch to arrival of the first chunk with non-empty response text
@@ -113,6 +113,7 @@ def main():
     ap.add_argument("--condition", default="baseline")
     ap.add_argument("--run-id", default=None)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--no-nonce", action="store_true")
     args = ap.parse_args()
 
     with open(args.prompts) as f:
@@ -124,14 +125,17 @@ def main():
         if new_file:
             w.writeheader()
         for seq in range(args.warmup + args.n):
+            # a unique first line defeats ollama prompt caching so every request pays full prefill
+            nonce = "" if args.no_nonce else uuid.uuid4().hex[:8]
+            text = f"Request {nonce}.\n{prompt}" if nonce else prompt
             wall_start = time.time()
-            r = one_request(args.host, args.port, args.model, prompt, args.num_predict, args.timeout)
+            r = one_request(args.host, args.port, args.model, text, args.num_predict, args.timeout)
             r.update({
                 "run_id": run_id, "request_id": uuid.uuid4().hex[:12], "seq": seq,
                 "warmup": int(seq < args.warmup), "path": args.path, "model": args.model,
                 "prompt_id": args.prompt_id, "loss_pct": args.loss_pct, "delay_ms": args.delay_ms,
                 "condition": args.condition, "wall_start": round(wall_start, 6),
-                "wall_end": round(time.time(), 6), "loadavg_1m": loadavg(),
+                "wall_end": round(time.time(), 6), "loadavg_1m": loadavg(), "prompt_nonce": nonce,
             })
             w.writerow(r)
             f.flush()
