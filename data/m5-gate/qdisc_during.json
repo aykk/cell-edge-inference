@@ -1,0 +1,1 @@
+{"netem": true, "uplink": {"delay_ms": 100.0, "loss_pct": 0.0, "raw": "qdisc netem 8007: root refcnt 2 limit 1000 delay 100ms"}, "downlink": {"delay_ms": 100.0, "loss_pct": 0.0, "raw": "qdisc netem 8008: root refcnt 2 limit 1000 delay 100ms"}, "ingress": true, "redirect": true, "ifb": true}
