@@ -9,6 +9,10 @@ IMSI=001010123456780
 KEY=00112233445566778899aabbccddeeff
 OPC=63BFA50EE6523365FF14C1F45F88737D
 
+# the amf needs sctp and wsl does not load the module on boot
+echo sctp | sudo tee /etc/modules-load.d/sctp.conf >/dev/null
+sudo modprobe sctp
+
 for f in /etc/open5gs/amf.yaml /etc/open5gs/nrf.yaml; do
   sudo sed -i -E 's/^(\s+)mcc: 999$/\1mcc: 001/; s/^(\s+)mnc: 70$/\1mnc: 01/' "$f"
 done

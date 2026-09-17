@@ -55,6 +55,11 @@ def ran_healthy():
     return r.returncode == 0
 
 
+def oom_kills():
+    r = subprocess.run(["sudo", "dmesg"], capture_output=True, text=True)
+    return r.stdout.count("Out of memory: Killed process")
+
+
 def restart_ran():
     subprocess.run([os.path.join(ROOT, "infra", "ran.sh"), "start"], check=False)
 
@@ -138,8 +143,15 @@ def main():
                 state = impair.apply(c["delay"], c["loss"]) if c["path"] == "ran" else impair.show()
                 log_event(events, c["cell"], "start", json.dumps({k: c[k] for k in ("path", "model", "prompt", "loss", "delay", "sentinel")} | {"qdisc": state}))
                 print(f"[{i + 1}/{len(plan)}] {c['cell']} {c['path']} {c['model']} {c['prompt']} loss={c['loss']} delay={c['delay']}", flush=True)
+                ooms = oom_kills()
                 run_cell(c, attempt, args, out)
                 impair.clear()
+                # an oom kill mid cell can drop a model or the ran and corrupt the cell
+                if oom_kills() > ooms:
+                    log_event(events, c["cell"], "oom_during", f"attempt {attempt}")
+                    if c["path"] == "ran" and not ran_healthy():
+                        restart_ran()
+                    continue
                 # a dead ran mid cell makes every request fail for reasons unrelated to the condition
                 if c["path"] == "ran" and not ran_healthy():
                     log_event(events, c["cell"], "ran_down_after", f"attempt {attempt}")
