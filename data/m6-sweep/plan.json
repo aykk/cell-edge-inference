@@ -1,0 +1,972 @@
+{
+ "seed": 20260917,
+ "n": 50,
+ "sentinel_n": 20,
+ "warmup": 3,
+ "timeout_s": 30,
+ "cells": [
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c000"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 0.5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c001"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c002"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c003"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 2,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c004"
+  },
+  {
+   "path": "loopback",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c005"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c006"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 5,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c007"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 0.5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c008"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 0.5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c009"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 1,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c010"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c011"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 200,
+   "sentinel": false,
+   "cell": "c012"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c013"
+  },
+  {
+   "path": "loopback",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c014"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c015"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 2,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c016"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 1,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c017"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c018"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 2,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c019"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 20,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c020"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c021"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c022"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 5,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c023"
+  },
+  {
+   "path": "loopback",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c024"
+  },
+  {
+   "path": "loopback",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c025"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 20,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c026"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c027"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 1,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c028"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 20,
+   "sentinel": false,
+   "cell": "c029"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 5,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c030"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 20,
+   "sentinel": false,
+   "cell": "c031"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c032"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c033"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 0.5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c034"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 1,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c035"
+  },
+  {
+   "path": "loopback",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c036"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 0.5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c037"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 5,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c038"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 1,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c039"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c040"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 20,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c041"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 200,
+   "sentinel": false,
+   "cell": "c042"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 5,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c043"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c044"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 10,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c045"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c046"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 1,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c047"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 5,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c048"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c049"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c050"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 10,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c051"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 20,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c052"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0.5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c053"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 20,
+   "sentinel": false,
+   "cell": "c054"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c055"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 1,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c056"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 10,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c057"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 5,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c058"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 1,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c059"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 1,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c060"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 200,
+   "sentinel": false,
+   "cell": "c061"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c062"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 1,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c063"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 200,
+   "sentinel": false,
+   "cell": "c064"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c065"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c066"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c067"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 5,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c068"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 1,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c069"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c070"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 10,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c071"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 20,
+   "sentinel": false,
+   "cell": "c072"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 2,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c073"
+  },
+  {
+   "path": "loopback",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c074"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 5,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c075"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 200,
+   "sentinel": false,
+   "cell": "c076"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c077"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c078"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 20,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c079"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 1,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c080"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 1,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c081"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 2,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c082"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c083"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 5,
+   "delay": 100,
+   "sentinel": false,
+   "cell": "c084"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c085"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c086"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 200,
+   "sentinel": false,
+   "cell": "c087"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c088"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c089"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "short",
+   "loss": 5,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c090"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 1,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c091"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 1,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c092"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 20,
+   "sentinel": false,
+   "cell": "c093"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 1,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c094"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 0,
+   "delay": 20,
+   "sentinel": false,
+   "cell": "c095"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 2,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c096"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c097"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 10,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c098"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c099"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 1,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c100"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 10,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c101"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:1.5b",
+   "prompt": "long",
+   "loss": 20,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c102"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "long",
+   "loss": 5,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c103"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:3b",
+   "prompt": "short",
+   "loss": 1,
+   "delay": 0,
+   "sentinel": false,
+   "cell": "c104"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 5,
+   "delay": 50,
+   "sentinel": false,
+   "cell": "c105"
+  },
+  {
+   "path": "ran",
+   "model": "qwen2.5:0.5b",
+   "prompt": "short",
+   "loss": 0,
+   "delay": 0,
+   "sentinel": true,
+   "cell": "c106"
+  }
+ ]
+}

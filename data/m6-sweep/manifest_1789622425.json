@@ -1,0 +1,24 @@
+{
+  "created": "2026-09-17T01:20:26-0400",
+  "repo_sha": "33625f9fa3732f3f08b99f20dab48c78c74b8f90",
+  "repo_dirty": true,
+  "srsran_project_sha": "d2f4b70dda8e2c557d5b05a0ac5f92dbddda19bc",
+  "srsran_4g_sha": "6bcbd9e5bf8686aa7085202cd847c5ddd64a9c16",
+  "open5gs": "2.8.0~noble5",
+  "ollama": "0.34.1",
+  "models": {
+    "qwen2.5:1.5b": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+    "qwen2.5:3b": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "qwen2.5:0.5b": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67"
+  },
+  "kernel": "6.18.33.2-microsoft-standard-WSL2",
+  "os": "Ubuntu 24.04.5 LTS",
+  "wsl": true,
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13700HX",
+  "nproc": 24,
+  "mem_total_kb": 11212472,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.64, 8188 MiB",
+  "python": "3.12.3",
+  "qdisc_tun_srsue": "qdisc fq_codel 0: root refcnt 2 limit 10240p flows 1024 quantum 1500 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64",
+  "loadavg": "0.87 0.21 0.07 3/671 1606"
+}
